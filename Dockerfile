@@ -1,4 +1,4 @@
-FROM python:latest
+FROM python:3.11.6
 
 # 設定 python 環境變數
 ENV PYTHONUNBUFFERED 1
@@ -13,3 +13,4 @@ COPY ./ /app/
 
 
 RUN pip3 install -r requirements.txt
+
