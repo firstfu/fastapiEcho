@@ -9,7 +9,7 @@ services:
       PORT: 8000
       ENV: 'local'
     volumes:
-      - ./:/
+      - ./:/app
     ports:
       - 8000:8000
     restart: always
