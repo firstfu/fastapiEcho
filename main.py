@@ -6,8 +6,13 @@ app = FastAPI()
 @app.get("/")
 async def index():
     return {
-        "message": "fastapi Hello World",
-        "status": 200,
+        "code": 200,
+        "statusCode": 2001,
+        "message": "測試api",
+        "data": {
+            "name": "test",
+            "age": 18,
+        },
     }
 
 
